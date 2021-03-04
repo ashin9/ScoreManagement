@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Resource name="jdbc/mysql"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="root"
+              password="123456"
+              maxIdle="30"
+              maxWait="10000"
+              maxActive="100"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://127.0.0.1:3306/jspweb1?serverTimezone=GMT"
+              logAbandoned="true" />
+</Context>

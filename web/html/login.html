@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<!-- title -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="../css/auth.css">
+</head>
+
+
+<!-- login and register page -->
+<body>
+	<div class="lowin">
+		<!-- log -->
+		<div class="lowin-brand">
+			<img src="kodinger.jpg" alt="logo">
+		</div>
+
+		<!-- login and page -->
+		<div class="lowin-wrapper">
+			<!-- login page -->
+			<div class="lowin-box lowin-login">
+				<div class="lowin-box-inner">
+					<form action="../jsp/loginSuccess.jsp" method="post">
+						<p>Sign in to continue</p>
+						<div class="lowin-group">
+							<label>stuId</label>
+							<input type="text" name="stuId" autocomplete="current-stuId" class="lowin-input">
+						</div>
+
+						<div class="lowin-group">
+							<label>stuPassword</label>
+							<input type="text" name="stuPassword" autocomplete="current-stuPassword" class="lowin-input">
+						</div>
+
+						<button class="lowin-btn login-btn">
+							Sign In
+						</button>
+
+						<div class="text-foot">
+							Don't have an account? <a href="./register.html" class="register-link">Register</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer  -->
+		<footer class="lowin-footer">
+			Design By @duxinxing
+		</footer>
+	</div>
+
+
+	<!--js脚本引入 -->
+	<script src="../js/auth.js"></script>
+	<script>
+		Auth.init({
+			login_url: '#login',
+			forgot_url: '#forgot'
+		});
+	</script>
+
+</body>
+</html>

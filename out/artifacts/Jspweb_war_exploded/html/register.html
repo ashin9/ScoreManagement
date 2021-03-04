@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<!-- title -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+
+<!--register page -->
+<body>
+<div class="lowin">
+    <!-- log -->
+    <div class="lowin-brand">
+        <img src="kodinger.jpg" alt="logo">
+    </div>
+
+    <!--register page -->
+    <div class="lowin-wrapper">
+        <!-- register page -->
+        <div class="lowin-box lowin-register">
+            <div class="lowin-box-inner">
+                <form action="../jsp/registerSucceed.jsp" method="post">
+                    <p>Let's create your account</p>
+                    <div class="lowin-group">
+                        <label>stuId</label>
+                        <input type="text" name="stuId" autocomplete="current-stuId" class="lowin-input">
+                    </div>
+
+                    <div class="lowin-group">
+                        <label>stuPassword</label>
+                        <input type="text" name="stuPassword" autocomplete="current-stuPassword" class="lowin-input">
+                    </div>
+
+                    <div class="lowin-group">
+                        <label>Confirm stuPassword</label>
+                        <input type="text" name="confirmstuPassword" autocomplete="current-stuPassword" class="lowin-input">
+                    </div>
+
+
+                    <div class="lowin-group">
+                        <label>stuName</label>
+                        <input type="text" name="stuName" autocomplete="current-stuName" class="lowin-input">
+                    </div>
+
+                    <div class="lowin-group">
+                        <label>stuSex</label>
+                        <input type="text" name="stuSex" autocomplete="current-stuSex" class="lowin-input">
+                    </div>
+
+                    <div class="lowin-group">
+                        <label>stuClassId</label>
+                        <input type="text" name="stuClassId" autocomplete="current-stuClassId" class="lowin-input">
+                    </div>
+
+                    <button class="lowin-btn">
+                        Sign Up
+                    </button>
+
+                    <div class="text-foot">
+                        Already have an account? <a href="./login.html" class="login-link">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="lowin-footer">
+        Design By @duxinxing
+    </footer>
+</div>
+
+
+<!--js脚本引入 -->
+<script src="../js/auth.js"></script>
+<script>
+    Auth.init({
+        login_url: '#login',
+        forgot_url: '#forgot'
+    });
+</script>
+
+</body>
+</html>
